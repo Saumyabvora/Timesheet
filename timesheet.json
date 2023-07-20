@@ -1,0 +1,27 @@
+[
+    {
+      "day": "Monday",
+      "timeSlot": "9-10",
+      "activity": "Meeting"
+    },
+    {
+      "day": "Tuesday",
+      "timeSlot": "10-11",
+      "activity": "Coding"
+    },
+    {
+      "day": "Wednesday",
+      "timeSlot": "11-12",
+      "activity": "Designing"
+    },
+    {
+      "day": "Thursday",
+      "timeSlot": "12-1",
+      "activity": "Lunch"
+    },
+    {
+      "day": "Friday",
+      "timeSlot": "1-2",
+      "activity": "Testing"
+    }
+  ]
