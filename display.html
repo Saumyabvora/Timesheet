@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timesheet Display</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table id="timesheetTable">
+    <thead>
+      <tr>
+        <th>Time Slot</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table data will be filled in here by JavaScript -->
+    </tbody>
+  </table>
+
+  <button onclick="loadTimesheetData()">Load Timesheet Data</button>
+
+  <script src="display.js"></script>
+</body>
+</html>

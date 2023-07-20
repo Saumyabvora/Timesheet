@@ -1,0 +1,17 @@
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var range = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn());
+  var data = range.getValues();
+  
+  // data is a 2D array holding your sheet's data
+  return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.getRange(1, 1, data.length, data[0].length).setValues(data);
+
+  // data is a 2D array containing the data to write
+  return ContentService.createTextOutput("Data Written").setMimeType(ContentService.MimeType.TEXT);
+}
